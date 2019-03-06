@@ -7,7 +7,6 @@ const router = (app) => {
   app.get('/page4', controllers.page4);
   app.get('/getName', controllers.getName);
   app.get('/findByName', controllers.searchName);
-  app.get('/searchNameDog', controllers.searchNameDog);
 
   app.get('/', controllers.index);
 
@@ -16,8 +15,6 @@ const router = (app) => {
   app.post('/setName', controllers.setName);
 
   app.post('/updateLast', controllers.updateLast);
-  
-  app.post('/setNameDog', controllers.setNameDog);
 };
 
 // export the router function
